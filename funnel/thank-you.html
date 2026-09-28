@@ -5,123 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thank You — We’ll Be In Touch Shortly | Xtreme Commercial Services</title>
   <meta name="robots" content="noindex, nofollow">
-  <meta name="theme-color" content="#161513">
+  <meta name="theme-color" content="#f4efe7">
 
   <!-- TRACKING HEAD CODES GO HERE: Meta Pixel, GA4, GTM Head, TikTok, etc. -->
   <!-- [GTM HEAD] -->
   <!-- [OTHER TRACKING] -->
 
   <!-- CONVERSION EVENT GOES HERE: Fire Meta Schedule event, Google Ads conversion, etc. -->
-  <!-- Example (only after the Meta Pixel base code is installed above):
-       <script>if (window.fbq) fbq('track', 'Schedule');</script>
-       Google Ads example:
-       <script>if (window.gtag) gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});</script>
-  -->
+  <!-- Meta, once the base Pixel is above:   <script>window.fbq && fbq('track', 'Schedule');</script>
+       Google Ads, once gtag is above:       <script>window.gtag && gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});</script> -->
 
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&amp;display=swap">
+  <link rel="stylesheet" href="site.css">
 </head>
-<body class="page-thanks">
+<body>
   <!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
   <!-- [GTM BODY] -->
 
-  <header class="thanks-hero">
-    <img class="hero__img" src="images/bedroom-curved-wall.jpg" srcset="images/bedroom-curved-wall-sm.jpg 800w, images/bedroom-curved-wall.jpg 1600w" sizes="100vw" alt="" width="1600" height="1067" fetchpriority="high">
-    <div class="hero__overlay" aria-hidden="true"></div>
-    <div class="topbar">
-      <span class="brand">Xtreme <span>Commercial Services</span></span>
-      <a class="topbar__phone" href="tel:+447962679697" data-track="call-click">07962 679697</a>
+  <div class="xcs-bar">
+    <div class="xcs-wrap xcs-bar__inner">
+      <span class="xcs-brand">Xtreme <span>Commercial Services</span></span>
+      <a class="xcs-bar__phone" href="tel:+447962679697">07962 679697</a>
     </div>
-    <div class="hero__content">
-      <p class="eyebrow">Your details are with us</p>
+  </div>
+
+  <header class="xcs-hero xcs-hero--thanks">
+    <div class="xcs-hero__photo">
+      <img src="images/bedroom-curved-wall.jpg" srcset="images/bedroom-curved-wall-sm.jpg 800w, images/bedroom-curved-wall.jpg 1600w" sizes="100vw" alt="" width="1600" height="1067" fetchpriority="high">
+    </div>
+    <div class="xcs-hero__block">
       <h1>You’re Almost Done — Someone Will Be In Touch Shortly</h1>
-      <p class="hero__sub">Here’s what happens next so you know what to expect.</p>
+      <p class="xcs-hero__sub">Here’s what happens next so you know what to expect.</p>
     </div>
   </header>
 
   <main>
-    <section class="section" aria-labelledby="next-title">
-      <div class="wrap wrap--narrow">
-        <h2 id="next-title" class="visually-hidden">What happens next</h2>
-        <ol class="next-steps">
+    <section class="xcs-section" aria-label="What happens next">
+      <div class="xcs-wrap xcs-wrap--narrow">
+        <ol class="xcs-next">
           <li>
-            <span class="steps__num" aria-hidden="true">01</span>
-            <div>
-              <h3>Keep your phone nearby</h3>
-              <p>One of our team will be calling you shortly to briefly discuss your project and answer any initial questions.</p>
-            </div>
+            <span class="xcs-next__num">Step 1</span>
+            <h2>Keep your phone nearby</h2>
+            <p>One of our team will be calling you shortly to briefly discuss your project and answer any initial questions.</p>
           </li>
           <li>
-            <span class="steps__num" aria-hidden="true">02</span>
-            <div>
-              <h3>Look out for our text</h3>
-              <p>You may also receive a text message from us. Reply to it so we can confirm your details and get you the right information before your consultation.</p>
-            </div>
+            <span class="xcs-next__num">Step 2</span>
+            <h2>Look out for our text</h2>
+            <p>You may also receive a text message from us. Reply to it so we can confirm your details and get you the right information before your consultation.</p>
           </li>
         </ol>
-
-        <p class="reinforce">We’ll be in touch very soon — make sure your phone is on and you’re able to take a short call.</p>
-        <!-- Change "2 working hours" below to the response time the team can reliably hit. -->
-        <p class="help-line">If you don’t hear from us within 2 working hours, check your messages or call us directly on <a href="tel:+447962679697" data-track="call-click">07962 679697</a>.</p>
+        <p class="xcs-reinforce">We’ll be in touch very soon — make sure your phone is on and you’re able to take a short call.</p>
+        <!-- Set "2 working hours" to a response time the team can always hit. -->
+        <p class="xcs-helpline">If you don’t hear from us within 2 working hours, check your messages or call us directly on <a href="tel:+447962679697">07962 679697</a>.</p>
       </div>
     </section>
 
-    <section class="proof" aria-labelledby="work-title">
-      <div class="wrap proof__head">
-        <h2 id="work-title">A few of our recent projects</h2>
-        <p class="subline">Painting, decorating and plastering across Central, North and North West London.</p>
+    <section class="xcs-bg-stone" aria-labelledby="work-title">
+      <div class="xcs-wrap xcs-work__head">
+        <h2 class="xcs-title" id="work-title">A few of our recent projects</h2>
+        <p class="xcs-lede">Painting, decorating and plastering across Central, North and North West London.</p>
       </div>
-      <div class="gallery gallery--three">
-        <figure><img src="images/living-room.jpg" alt="Period living room with white walls and restored fireplace" width="1024" height="683" loading="lazy" decoding="async"><figcaption>Living room · Full redecoration</figcaption></figure>
-        <figure><img src="images/staircase-black.jpg" alt="Staircase with black gloss spindles" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Hallway and stairs · Black gloss</figcaption></figure>
-        <figure><img src="images/arch-vanity.jpg" alt="Plastered archway into a pink bathroom" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Bathroom arch · Smooth plaster curve</figcaption></figure>
-        <figure><img src="images/bedroom-green-ceiling.jpg" alt="Bedroom with deep green ceiling" width="819" height="1024" loading="lazy" decoding="async"><figcaption>Main bedroom · Green ceiling</figcaption></figure>
-        <figure><img src="images/hallway.jpg" srcset="images/hallway-sm.jpg 800w, images/hallway.jpg 1600w" sizes="(min-width: 900px) 33vw, 100vw" alt="Long painted hallway" width="1600" height="1067" loading="lazy" decoding="async"><figcaption>Hallway · Warm neutral walls</figcaption></figure>
-        <figure><img src="images/kitchen-island.jpg" srcset="images/kitchen-island-sm.jpg 800w, images/kitchen-island.jpg 1600w" sizes="(min-width: 900px) 33vw, 100vw" alt="Open-plan kitchen with warm white walls and a curved tiled island" width="1600" height="1066" loading="lazy" decoding="async"><figcaption>Open-plan kitchen · Warm white walls</figcaption></figure>
+      <div class="xcs-mosaic">
+        <figure class="xcs-tile--lg"><img src="images/living-room-skylight.jpg" alt="Skylit living room with warm white walls and green sofa" width="800" height="1200" loading="lazy" decoding="async"><figcaption>Open-plan living · Skylit and bright</figcaption></figure>
+        <figure><img src="images/arch-vanity.jpg" alt="Plastered archway into a pink bathroom" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Bathroom arch · Smooth plaster</figcaption></figure>
+        <figure><img src="images/cloakroom-terracotta.jpg" alt="Terracotta cloakroom with arched mirror" width="800" height="1613" loading="lazy" decoding="async"><figcaption>Cloakroom · Terracotta</figcaption></figure>
+        <figure><img src="images/staircase-black.jpg" alt="Staircase with black gloss spindles" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Hallway · Black gloss</figcaption></figure>
+        <figure><img src="images/bedroom-green-ceiling.jpg" alt="Bedroom with deep green ceiling" width="819" height="1024" loading="lazy" decoding="async"><figcaption>Bedroom · Green ceiling</figcaption></figure>
+        <figure class="xcs-tile--wide"><img src="images/kitchen-island.jpg" srcset="images/kitchen-island-sm.jpg 800w, images/kitchen-island.jpg 1600w" sizes="(min-width: 900px) 50vw, 100vw" alt="Open-plan kitchen with warm white walls and curved tiled island" width="1600" height="1066" loading="lazy" decoding="async"><figcaption>Open-plan kitchen · Warm whites</figcaption></figure>
+        <figure class="xcs-tile--wide"><img src="images/living-room.jpg" alt="Period living room with white walls and fireplace" width="1024" height="683" loading="lazy" decoding="async"><figcaption>Period living room · Bright whites</figcaption></figure>
       </div>
     </section>
 
-    <section class="section section--paper" aria-labelledby="faq-title">
-      <div class="wrap wrap--narrow">
-        <h2 id="faq-title">Questions you might have</h2>
-        <div class="faq" data-faq>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">What happens after I fill in the form?</button></h3>
-            <div class="faq__a"><p>One of our team calls you to talk about your project. If it’s a good fit, we arrange a visit and send a written quote.</p></div>
-          </div>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">We’re still planning. Is it too early to get in touch?</button></h3>
-            <div class="faq__a"><p>No. Early is better. We can help you plan timings and a realistic budget before you commit.</p></div>
-          </div>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">What if my budget doesn’t match what I need?</button></h3>
-            <div class="faq__a"><p>We’ll tell you honestly. We can often phase the work or suggest where to save, so the rooms that matter most get the best finish.</p></div>
-          </div>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">What areas do you cover?</button></h3>
-            <div class="faq__a"><p>Central London, North London and North West London. If you’re just outside, ask anyway.</p></div>
-          </div>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">Do you take on developments and commercial buildings?</button></h3>
-            <div class="faq__a"><p>Yes. We work with homeowners, property developers and commercial building owners, from single rooms to whole buildings.</p></div>
-          </div>
-          <div class="faq__item">
-            <h3><button type="button" class="faq__q" aria-expanded="false">Is the quote really free?</button></h3>
-            <div class="faq__a"><p>Yes. The call and the quote are free, and you are under no obligation to go ahead.</p></div>
-          </div>
-        </div>
+    <section class="xcs-section" aria-labelledby="faq-title">
+      <div class="xcs-wrap">
+        <h2 class="xcs-title" id="faq-title">Questions you might have</h2>
+        <dl class="xcs-faq">
+          <div><dt><h3>What happens after I fill in the form?</h3></dt><dd>One of our team calls you to talk about your project. If it’s a good fit, we arrange a visit and send a written quote.</dd></div>
+          <div><dt><h3>We’re still planning. Is it too early?</h3></dt><dd>No. Early is better. We can help you plan timings and a realistic budget before you commit.</dd></div>
+          <div><dt><h3>What if my budget doesn’t match what I need?</h3></dt><dd>We’ll tell you honestly. We can often phase the work or suggest where to save, so the rooms that matter most get the best finish.</dd></div>
+          <div><dt><h3>What areas and properties do you cover?</h3></dt><dd>Central, North and North West London. Homes, developments and commercial buildings, from single rooms to whole buildings.</dd></div>
+        </dl>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <p class="brand">Xtreme <span>Commercial Services</span></p>
+  <footer class="xcs-foot">
+    <div class="xcs-wrap">
+      <p class="xcs-brand">Xtreme <span>Commercial Services</span></p>
       <p>Painting, decorating and plastering across Central, North &amp; North West London.</p>
-      <p class="site-footer__links"><a href="privacy.html" data-keep-utm>Privacy Policy</a><a href="terms.html" data-keep-utm>Terms of Service</a></p>
-      <p class="site-footer__copy">© <span data-year>2026</span> Xtreme Commercial Services. All rights reserved.</p>
+      <p class="xcs-foot__links"><a href="privacy.html" data-utm-link>Privacy Policy</a><a href="terms.html" data-utm-link>Terms of Service</a></p>
+      <p class="xcs-foot__copy">© <span data-xcs-year>2026</span> Xtreme Commercial Services. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
