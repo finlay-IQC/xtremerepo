@@ -133,6 +133,25 @@ p:last-child { margin-bottom: 0; }
 .xcs-stats { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .xcs-stats li { border-top: 4px solid var(--xcs-accent); padding-top: 12px; font-size: 13px; color: var(--xcs-muted); line-height: 1.4; }
 .xcs-stats strong { display: block; font-size: 26px; font-weight: 800; color: var(--xcs-text); letter-spacing: -0.03em; }
+/* Mobile: compact hero and form first, so the form starts inside the first screen */
+@media (max-width: 899px) {
+  .xcs-hero--lead .xcs-hero__photo { height: 16vh; min-height: 120px; }
+  .xcs-hero--lead .xcs-hero__block { padding: 18px var(--xcs-gutter) 16px; }
+  .xcs-hero--lead .xcs-hero__sub { margin: 10px 0 0; font-size: 15px; line-height: 1.55; }
+  /* the form sits directly below, so the hero button and friction line are desktop-only */
+  .xcs-hero--lead .xcs-btn, .xcs-hero--lead .xcs-friction { display: none; }
+  .xcs-hero--lead .xcs-trust { margin-top: 12px; padding-top: 10px; font-size: 13px; gap: 4px 16px; }
+  .xcs-hero--lead .xcs-trust li:nth-child(3) { display: none; }
+  #quote { padding-top: 20px; }
+  .xcs-form-grid { display: flex; flex-direction: column; gap: 0; }
+  .xcs-form-intro { display: contents; }
+  .xcs-form-intro .xcs-title { order: 1; font-size: 22px; }
+  .xcs-form-intro .xcs-title::before { display: none; }
+  .xcs-form-intro .xcs-lede { order: 2; margin: 4px 0 12px; font-size: 14px; }
+  .xcs-embed { order: 3; }
+  .xcs-form-intro > p:not(.xcs-lede), .xcs-stats { order: 4; }
+  .xcs-form-intro > p:not(.xcs-lede) { margin: 20px 0 0; }
+}
 /* Reserve embed height to avoid layout shift */
 .xcs-embed { min-height: 786px; border: 1px solid var(--xcs-line); background: var(--xcs-white); }
 .xcs-embed iframe { display: block; width: 100%; min-height: 786px; }
