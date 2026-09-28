@@ -98,6 +98,7 @@ p:last-child { margin-bottom: 0; }
   overflow: hidden;
 }
 @media (min-width: 900px) { .hero { min-height: 92vh; } }
+.hero picture, .thanks-hero picture { display: contents; }
 .hero__img {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -236,7 +237,7 @@ p:last-child { margin-bottom: 0; }
 @media (min-width: 700px) { .gallery { grid-template-columns: 1fr 1fr; } }
 @media (min-width: 900px) { .gallery--three { grid-template-columns: repeat(3, 1fr); } }
 .gallery figure { position: relative; margin: 0; height: 440px; }
-@media (min-width: 900px) { .gallery figure { height: 620px; } .gallery--three figure { height: 480px; } }
+@media (min-width: 900px) { .gallery figure { height: 620px; } .gallery--three figure { height: 540px; } }
 .gallery img { width: 100%; height: 100%; object-fit: cover; }
 .gallery figcaption {
   position: absolute; left: 0; right: 0; bottom: 0;

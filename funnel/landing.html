@@ -12,7 +12,8 @@
   <!-- [OTHER TRACKING] -->
   <!-- Optional: a lower-intent Meta "Lead" event may fire on form completion here, only once the Pixel code is installed. Do NOT fire the booked-call / Schedule conversion on this page. -->
 
-  <link rel="preload" as="image" href="images/living-room.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="images/living-room-skylight.jpg" media="(max-width: 699px)" fetchpriority="high">
+  <link rel="preload" as="image" href="images/kitchen-island.jpg" imagesrcset="images/kitchen-island-sm.jpg 800w, images/kitchen-island.jpg 1600w" imagesizes="100vw" media="(min-width: 700px)" fetchpriority="high">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +22,10 @@
 
   <!-- 1. HERO -->
   <header class="hero" id="top">
-    <img class="hero__img" src="images/living-room.jpg" alt="Period living room with fresh white walls, restored fireplace and arched bay window" width="1024" height="683" fetchpriority="high">
+    <picture>
+      <source media="(max-width: 699px)" srcset="images/living-room-skylight.jpg" width="800" height="1200">
+      <img class="hero__img" src="images/kitchen-island.jpg" srcset="images/kitchen-island-sm.jpg 800w, images/kitchen-island.jpg 1600w" sizes="100vw" alt="Bright open-plan space with warm white walls, oak kitchen and a curved tiled island" width="1600" height="1066" fetchpriority="high">
+    </picture>
     <div class="hero__overlay" aria-hidden="true"></div>
 
     <div class="topbar">
@@ -175,11 +179,13 @@
         <h2 id="proof-title">Recent work across London</h2>
         <p class="subline">Real rooms we have painted, decorated and plastered.</p>
       </div>
-      <div class="gallery">
+      <div class="gallery gallery--three">
         <figure><img src="images/staircase-black.jpg" alt="Hallway staircase with black gloss spindles and white walls" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Hallway and stairs · Black gloss, crisp clean lines</figcaption></figure>
         <figure><img src="images/bedroom-green-ceiling.jpg" alt="Bedroom with deep green ceiling, ornate ceiling rose and white walls" width="819" height="1024" loading="lazy" decoding="async"><figcaption>Main bedroom · Deep green ceiling, crisp white walls</figcaption></figure>
         <figure><img src="images/landing-period.jpg" alt="Victorian landing with stained glass window and fresh white walls" width="683" height="1024" loading="lazy" decoding="async"><figcaption>Period landing · Fresh whites around original glass</figcaption></figure>
         <figure><img src="images/bathroom-terrazzo.jpg" alt="Blush pink bathroom with terrazzo floor and brass fittings" width="1024" height="683" loading="lazy" decoding="async"><figcaption>Family bathroom · Blush walls, sharp edges</figcaption></figure>
+        <figure><img src="images/living-room-green-sofa.jpg" alt="Open-plan living room with warm white walls, beamed ceiling and green sofa" width="800" height="1200" loading="lazy" decoding="async"><figcaption>Open-plan living · Warm whites, beamed ceiling</figcaption></figure>
+        <figure><img src="images/cloakroom-terracotta.jpg" alt="Cloakroom painted in terracotta on walls and ceiling with an arched mirror" width="800" height="1613" loading="lazy" decoding="async"><figcaption>Cloakroom · Colour-drenched in warm terracotta</figcaption></figure>
       </div>
 
       <!-- TESTIMONIALS: real 5-star Google reviews, shortened with the original meaning kept. Surnames initialised. -->
