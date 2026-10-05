@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Xtreme Commercial Services | Painting, Decorating &amp; Plastering Brochure</title>
+<meta name="description" content="Xtreme Commercial Services: painting, decorating and plastering for homes, developments and commercial buildings across Central, North and North West London.">
+<meta property="og:title" content="Xtreme Commercial Services | Decorating Brochure">
+<meta property="og:description" content="Painting, decorating and plastering across Central, North and North West London. 5.0 from 21 Google reviews.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1e1b18">
+
+<!-- TRACKING HEAD CODES GO HERE: Meta Pixel, GA4, GTM Head, TikTok, etc. -->
+<!-- [GTM HEAD] -->
+
+<style>
+  /* Manrope is self-hosted so the PDF export and the web page render identically */
+  @font-face{font-family:'Manrope';src:url(brochure/fonts/manrope-latin-400-normal.woff2) format('woff2');font-weight:400;font-style:normal}
+  @font-face{font-family:'Manrope';src:url(brochure/fonts/manrope-latin-600-normal.woff2) format('woff2');font-weight:600;font-style:normal}
+  @font-face{font-family:'Manrope';src:url(brochure/fonts/manrope-latin-800-normal.woff2) format('woff2');font-weight:800;font-style:normal}
+  @page { size: A4; margin: 0; }
+  :root{ --ink:#1e1b18; --ink2:#2b2723; --muted:#645d54; --tc:#b24f2c; --tc-lt:#e09a78; --stone:#f4efe7; --line:#d9d0c2; --paper:#fbf9f5; --dline:#433d37; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Manrope','Helvetica Neue',Arial,sans-serif;color:var(--ink);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .xb-page{width:210mm;height:297mm;position:relative;overflow:hidden;background:var(--paper);page-break-after:always}
+  .xb-page:last-child{page-break-after:auto}
+  .xb-eyebrow{font-size:7.5pt;letter-spacing:.3em;text-transform:uppercase;font-weight:800;color:var(--tc)}
+  h1,h2,h3,h4,h5{font-weight:800;letter-spacing:-.025em}
+  h2{font-size:25pt;line-height:1.08;color:var(--ink)}
+  h2 .tc{color:var(--tc)}
+  p{font-size:9.4pt;line-height:1.6;color:var(--muted)}
+  .xb-rule{display:block;width:14mm;height:1.2mm;background:var(--tc);margin-bottom:4mm}
+  .xb-pad{padding:16mm 18mm}
+  .xb-foot{position:absolute;left:18mm;right:18mm;bottom:9mm;display:flex;justify-content:space-between;font-size:7pt;color:var(--muted);letter-spacing:.06em;border-top:1px solid var(--line);padding-top:3mm}
+  .xb-ph{background-size:cover;background-position:center;background-color:#cfc6b8}
+
+  /* wordmark */
+  .xb-wm{display:flex;align-items:center;gap:4mm}
+  .xb-wm .m{width:11mm;height:11mm;background:var(--tc);display:grid;place-items:center;font-weight:800;color:#fff;font-size:13pt;letter-spacing:-.02em}
+  .xb-wm .n{font-weight:800;letter-spacing:.2em;font-size:12.5pt;color:#fff}
+  .xb-wm .s{font-size:6.3pt;letter-spacing:.3em;color:#cfc7bb;margin-top:1mm;font-weight:600}
+
+  /* cover */
+  .xb-cover{background:var(--ink);color:#fff}
+  .xb-cover .hero{position:absolute;left:0;right:0;top:0;height:172mm}
+  .xb-cover .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,27,24,.55) 0%,rgba(30,27,24,0) 28%,rgba(30,27,24,0) 52%,rgba(30,27,24,.92) 100%)}
+  .xb-cover .top{position:absolute;left:18mm;top:14mm;z-index:2}
+  .xb-cover h1{position:absolute;left:18mm;right:18mm;top:124mm;z-index:2;font-size:31pt;line-height:1.04;color:#fff}
+  .xb-cover h1 .tc{color:var(--tc-lt)}
+  .xb-cover .lede{position:absolute;left:18mm;width:118mm;top:180mm;color:#d6cfc4;font-size:10.8pt;line-height:1.5}
+  .xb-cover .xb-pill{position:absolute;right:18mm;top:182mm}
+  .xb-pill{display:inline-block;background:var(--tc);color:#fff;font-size:7.5pt;letter-spacing:.24em;font-weight:800;padding:2.4mm 4.5mm}
+  .xb-apart{position:absolute;left:18mm;right:18mm;top:203mm;display:grid;grid-template-columns:44mm 1fr;gap:9mm}
+  .xb-big{font-size:48pt;font-weight:800;line-height:.9;letter-spacing:-.04em}
+  .xb-big small{display:block;font-size:7pt;letter-spacing:.24em;color:var(--tc-lt);margin-top:3mm;font-weight:800;line-height:1.5}
+  .xb-big .stars{display:block;font-size:12pt;letter-spacing:.12em;color:var(--tc-lt);margin-top:2.5mm}
+  .xb-ticks{list-style:none;border-top:1px solid var(--dline)}
+  .xb-ticks li{display:flex;gap:4mm;font-size:9.6pt;color:#ebe5dc;line-height:1.4;padding:2.4mm 0;border-bottom:1px solid var(--dline)}
+  .xb-ticks li b{color:var(--tc-lt);font-weight:800;font-size:8pt;padding-top:.4mm}
+  .xb-stats{position:absolute;left:0;right:0;bottom:0;height:28mm;background:var(--stone);display:grid;grid-template-columns:repeat(4,1fr);padding:0 18mm}
+  .xb-stat{display:flex;flex-direction:column;justify-content:center;border-left:1px solid var(--line);padding-left:5mm}
+  .xb-stat:first-child{border-left:0;padding-left:0}
+  .xb-stat .v{font-size:14pt;font-weight:800;color:var(--ink);letter-spacing:-.02em}
+  .xb-stat .l{font-size:6.5pt;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-top:1mm;font-weight:800}
+
+  /* about */
+  .xb-band{background:var(--stone);padding:15mm 18mm 11mm;display:grid;grid-template-columns:1fr 64mm;gap:9mm}
+  .xb-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:5mm}
+  .xb-card{border-top:1.2mm solid var(--tc);background:#fff;padding:5mm}
+  .xb-card .k{color:var(--tc);font-size:8pt;font-weight:800;letter-spacing:.2em}
+  .xb-card h4{font-size:10.8pt;margin:2.5mm 0 1.5mm;line-height:1.2}
+  .xb-card p{font-size:8.8pt;line-height:1.5}
+  .xb-area{display:grid;grid-template-columns:40mm 1fr;padding:2.5mm 0;border-bottom:1px solid var(--line)}
+  .xb-area.first{border-top:1px solid var(--line)}
+  .xb-area .c{font-size:7.5pt;letter-spacing:.18em;font-weight:800;color:var(--ink)}
+  .xb-area .t{font-size:9.4pt;color:var(--muted)}
+
+  /* services + process */
+  .xb-svc{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm;margin-top:6mm}
+  .xb-svc .img{height:46mm}
+  .xb-svc .body{background:#fff;border:1px solid var(--line);border-top:0;padding:4.5mm}
+  .xb-tag{font-size:6.8pt;letter-spacing:.22em;color:var(--tc);font-weight:800}
+  .xb-svc h3{font-size:13pt;margin:1.5mm 0 2mm;line-height:1.12}
+  .xb-svc p{font-size:8.7pt;line-height:1.45}
+  .xb-step{display:grid;grid-template-columns:13mm 1fr;padding:2.8mm 0;border-bottom:1px solid var(--line)}
+  .xb-step.first{border-top:1px solid var(--line)}
+  .xb-num{font-size:15pt;color:var(--tc);font-weight:800;line-height:1;letter-spacing:-.03em}
+  .xb-step h5{font-size:10.5pt}
+  .xb-step p{font-size:9pt;margin-top:.6mm;line-height:1.45}
+
+  /* portfolio */
+  .xb-phead{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:5mm;gap:8mm}
+  .xb-ptitle{font-size:18pt;font-weight:800;letter-spacing:-.025em;margin-top:2mm;line-height:1.1}
+  .xb-pdesc{font-size:9.2pt;margin-top:2mm;max-width:135mm}
+  .xb-pno{font-size:40pt;font-weight:800;color:var(--line);line-height:.8;letter-spacing:-.04em}
+  .xb-g{display:grid;gap:3mm}
+
+  /* reviews */
+  .xb-score{display:flex;align-items:center;gap:5mm;margin-top:5mm}
+  .xb-score .b{background:var(--ink);color:#fff;font-size:13pt;font-weight:800;padding:3mm 5mm;white-space:nowrap;letter-spacing:-.01em}
+  .xb-score .b span{color:var(--tc-lt);letter-spacing:.1em;margin-left:2mm}
+  .xb-rv{background:#fff;border-left:1.2mm solid var(--tc);padding:5mm 6mm}
+  .xb-rv .top{display:flex;justify-content:space-between;align-items:center;gap:4mm}
+  .xb-rv .job{font-size:10pt;font-weight:800;flex:1}
+  .xb-rv .st{font-size:9pt;color:var(--tc);letter-spacing:.12em}
+  .xb-rv q{display:block;font-size:10.2pt;line-height:1.55;color:var(--ink);margin-top:2.5mm;quotes:"\201C" "\201D"}
+  .xb-rv .who{font-size:7.5pt;color:var(--muted);margin-top:2.5mm;letter-spacing:.06em;font-weight:600}
+
+  /* cta */
+  .xb-cta-top{position:relative;height:98mm;color:#fff}
+  .xb-cta-top::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(30,27,24,.35),rgba(30,27,24,.88))}
+  .xb-cta-top .in{position:absolute;left:18mm;right:18mm;bottom:12mm;z-index:2}
+  .xb-cta-top .xb-eyebrow{color:var(--tc-lt)}
+  .xb-cta-top h2{color:#fff;font-size:30pt;margin-top:3mm}
+  .xb-cta-top p{color:#e3ddd3;font-size:10.3pt;margin-top:4mm;max-width:165mm}
+  .xb-cta-grid{display:grid;grid-template-columns:1fr 1fr;gap:10mm;padding:10mm 18mm 0}
+  .xb-list{list-style:none;margin-top:3mm}
+  .xb-list li{font-size:9.4pt;padding:2.3mm 0;border-bottom:1px solid var(--line);display:flex;gap:3mm;line-height:1.4}
+  .xb-list li::before{content:"";flex:0 0 2.4mm;height:2.4mm;margin-top:1.2mm;background:var(--tc)}
+  h3.xb-sm{font-size:14.5pt;margin-top:1.5mm}
+  .xb-contact{margin:8mm 18mm 0;background:var(--stone);padding:7mm 9mm;display:grid;grid-template-columns:1.1fr 1fr;gap:8mm;align-items:center}
+  .xb-contact .big2{font-size:22pt;font-weight:800;letter-spacing:-.02em}
+  .xb-contact .row{font-size:9.4pt;padding:1.4mm 0}
+  .xb-contact .row span{display:inline-block;width:17mm;font-size:6.8pt;letter-spacing:.2em;color:var(--tc);font-weight:800}
+  .xb-closer{position:absolute;left:0;right:0;bottom:0;height:32mm;background:var(--ink);padding:0 18mm;display:flex;justify-content:space-between;align-items:center}
+</style>
+<style>
+  /* Screen view: pages scaled to fit, with download + call buttons. Hidden when printing. */
+  html,body{background:#d8d1c6}
+  body{padding-inline:16px;padding-block:24px}
+  .xb-deck{display:flex;flex-direction:column;align-items:center;gap:20px}
+  .xb-page{zoom:var(--z,1);box-shadow:0 6px 28px rgba(30,27,24,.22);flex:none}
+  .xb-bar{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+  .xb-bar a{text-decoration:none;font-weight:800;letter-spacing:.12em;font-size:12px;padding:13px 20px}
+  .xb-bar .p{background:var(--tc);color:#fff}
+  .xb-bar .p:hover{background:#a04728}
+  .xb-bar .s{border:1.5px solid var(--ink);color:var(--ink);padding:11.5px 20px}
+  @media print{html,body{background:#fff;padding:0}.xb-deck{gap:0}.xb-page{zoom:1;box-shadow:none}.xb-bar{display:none}}
+</style>
+<script>(function(){function fit(){var w=document.documentElement.clientWidth-32;document.documentElement.style.setProperty('--z',Math.min(1,w/794).toFixed(4));}fit();addEventListener('resize',fit);})();</script>
+</head>
+<body>
+<!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
+<!-- [GTM BODY] -->
+
+<div class="xb-bar"><a class="p" href="brochure/xtreme-commercial-services-brochure.pdf" download>DOWNLOAD PDF</a><a class="s" href="tel:+447962679697">CALL 07962 679697</a></div>
+<main class="xb-deck">
+
+<!-- 1 · COVER -->
+<section class="xb-page xb-cover">
+  <div class="hero xb-ph" style="background-image:url(images/kitchen-island.jpg)"></div>
+  <div class="top xb-wm"><div class="m">X</div><div><div class="n">XTREME</div><div class="s">COMMERCIAL SERVICES · LONDON</div></div></div>
+  <h1>Painting, decorating<br>and plastering.<br><span class="tc">Finished properly.</span></h1>
+  <div class="lede">For homes, developments and commercial buildings across Central, North and North West London.</div>
+  <div class="xb-pill">FREE DECORATION QUOTE</div>
+  <div class="xb-apart">
+    <div class="xb-big">5.0<span class="stars">★★★★★</span><small>FROM 21<br>GOOGLE REVIEWS</small></div>
+    <ul class="xb-ticks">
+      <li><b>01</b>A written, itemised quote before any work starts</li>
+      <li><b>02</b>Walls filled, sanded and primed before a top coat goes on</li>
+      <li><b>03</b>Fixed start and finish dates, and a home left tidy every day</li>
+      <li><b>04</b>Single rooms to whole buildings, inside and out</li>
+    </ul>
+  </div>
+  <div class="xb-stats">
+    <div class="xb-stat"><div class="v">10+ years</div><div class="l">In the trade</div></div>
+    <div class="xb-stat"><div class="v">100+</div><div class="l">Projects completed</div></div>
+    <div class="xb-stat"><div class="v">5.0 ★</div><div class="l">Google rating</div></div>
+    <div class="xb-stat"><div class="v">London</div><div class="l">Central · North · NW</div></div>
+  </div>
+</section>
+
+<!-- 2 · ABOUT -->
+<section class="xb-page">
+  <div class="xb-band">
+    <div>
+      <div class="xb-eyebrow">About Xtreme</div>
+      <h2 style="margin-top:4mm">A finish you notice.<br><span class="tc">For the right reasons.</span></h2>
+      <p style="margin-top:5mm">Xtreme Commercial Services paints, decorates and plasters homes, developments and commercial buildings across Central, North and North West London. Our clients are homeowners, property developers and building owners who want the job done right first time.</p>
+      <p style="margin-top:3mm">After more than 10 years and over 100 projects, we know a finish is only as good as the preparation underneath it. So we fix the walls first, protect your home while we work, and tell you exactly what it will cost before we start.</p>
+    </div>
+    <div class="xb-ph" style="background-image:url(images/bedroom-curved-wall.jpg)"></div>
+  </div>
+  <div class="xb-pad" style="padding-top:9mm">
+    <div class="xb-eyebrow">What sets us apart</div>
+    <h2 style="font-size:20pt;margin-top:3mm">How we run every job.</h2>
+    <div class="xb-cards">
+      <div class="xb-card"><div class="k">01</div><h4>A written, itemised quote</h4><p>You see every cost before any work starts, so there are no extras appearing halfway through.</p></div>
+      <div class="xb-card"><div class="k">02</div><h4>Prep done properly</h4><p>Cracks filled, walls sanded, surfaces primed. It's the part you don't see, and it's why the finish lasts.</p></div>
+      <div class="xb-card"><div class="k">03</div><h4>Clear dates, tidy home</h4><p>You know when we arrive and when we finish. Floors and furniture are covered, and we clean up daily.</p></div>
+    </div>
+    <div class="xb-eyebrow" style="margin-top:8mm">Where we work</div>
+    <h2 style="font-size:20pt;margin:3mm 0 4mm">Central, North &amp; North West London.</h2>
+    <div class="xb-area first"><div class="c">CENTRAL LONDON</div><div class="t">Westminster · Marylebone · Fitzrovia · Bloomsbury · Holborn · the City</div></div>
+    <div class="xb-area"><div class="c">NORTH LONDON</div><div class="t">Islington · Highgate · Crouch End · Muswell Hill · Finchley · Barnet</div></div>
+    <div class="xb-area"><div class="c">NORTH WEST LONDON</div><div class="t">Hampstead · St John's Wood · West Hampstead · Kilburn · Hendon</div></div>
+    <div class="xb-area"><div class="c">JUST OUTSIDE?</div><div class="t">Ask anyway. We take on selected projects nearby.</div></div>
+  </div>
+  <div class="xb-foot"><span>Xtreme Commercial Services · 07962 679697</span><span>02</span></div>
+</section>
+
+<!-- 3 · SERVICES + PROCESS -->
+<section class="xb-page">
+  <div class="xb-pad">
+    <div class="xb-eyebrow">What we do</div>
+    <h2 style="margin-top:3mm">Three trades. <span class="tc">One team.</span></h2>
+    <div class="xb-svc">
+      <div><div class="img xb-ph" style="background-image:url(images/living-room-green-sofa.jpg)"></div><div class="body"><div class="xb-tag">PAINTING &amp; DECORATING</div><h3>Interiors, room by room</h3><p>Walls, ceilings and woodwork, from crisp whites to fully colour-drenched rooms.</p></div></div>
+      <div><div class="img xb-ph" style="background-image:url(images/arch-vanity.jpg)"></div><div class="body"><div class="xb-tag">PLASTERING</div><h3>Smooth walls, curves &amp; arches</h3><p>Re-plastering damaged walls, skimming, and shaped plasterwork finished ready to paint.</p></div></div>
+      <div><div class="img xb-ph" style="background-image:url(images/living-room.jpg)"></div><div class="body"><div class="xb-tag">EXTERIOR &amp; COMMERCIAL</div><h3>Frontages &amp; whole buildings</h3><p>House fronts, developments and commercial spaces, including liaising with scaffolders.</p></div></div>
+    </div>
+    <div class="xb-eyebrow" style="margin-top:9mm">How we work</div>
+    <h2 style="font-size:20pt;margin:3mm 0 4mm">From first call to final coat.</h2>
+    <div class="xb-step first"><div class="xb-num">01</div><div><h5>Free call</h5><p>A short call to talk through your rooms, the finish you want, your budget and your timing.</p></div></div>
+    <div class="xb-step"><div class="xb-num">02</div><div><h5>Site visit</h5><p>We look at the walls, ceilings and woodwork, and check what prep and plastering the job really needs.</p></div></div>
+    <div class="xb-step"><div class="xb-num">03</div><div><h5>Colour &amp; finish advice</h5><p>Honest advice on paint, sheen and plaster for each room, so it looks right and lasts.</p></div></div>
+    <div class="xb-step"><div class="xb-num">04</div><div><h5>Written quote &amp; dates</h5><p>An itemised written quote with start and finish dates, before anything is agreed.</p></div></div>
+    <div class="xb-step"><div class="xb-num">05</div><div><h5>The work</h5><p>Your home is protected, we tidy up daily, and we walk the finished job with you at the end.</p></div></div>
+  </div>
+  <div class="xb-foot"><span>Xtreme Commercial Services · 07962 679697</span><span>03</span></div>
+</section>
+
+<!-- 4 · PORTFOLIO 01 -->
+<section class="xb-page">
+  <div class="xb-pad">
+    <div class="xb-eyebrow">Portfolio</div>
+    <h2 style="margin-top:3mm;margin-bottom:7mm">Recent projects.</h2>
+    <div class="xb-phead"><div><div class="xb-eyebrow" style="font-size:7pt">Project 01 · Painting &amp; plastering</div><div class="xb-ptitle">Open-plan home in warm whites</div><p class="xb-pdesc">Warm white walls and ceilings through an open-plan kitchen and living space, a smooth plastered curved wall, and a cloakroom colour-drenched in terracotta from floor to ceiling.</p></div><div class="xb-pno">01</div></div>
+    <div class="xb-g" style="grid-template-columns:1.25fr 1fr;grid-template-rows:66mm 66mm">
+      <div class="xb-ph" style="grid-row:span 2;background-image:url(images/living-room-skylight.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/kitchen-island.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/bedroom-curved-wall.jpg)"></div>
+    </div>
+    <div class="xb-g" style="grid-template-columns:1fr 1fr 1fr;grid-template-rows:56mm;margin-top:3mm">
+      <div class="xb-ph" style="background-image:url(images/cloakroom-terracotta.jpg);background-position:center 30%"></div>
+      <div class="xb-ph" style="background-image:url(images/living-room-green-sofa.jpg);background-position:center 60%"></div>
+      <div class="xb-ph" style="background-image:url(images/hallway.jpg)"></div>
+    </div>
+  </div>
+  <div class="xb-foot"><span>Xtreme Commercial Services · 07962 679697</span><span>04</span></div>
+</section>
+
+<!-- 5 · PORTFOLIO 02 + 03 -->
+<section class="xb-page">
+  <div class="xb-pad">
+    <div class="xb-phead"><div><div class="xb-eyebrow" style="font-size:7pt">Project 02 · Full redecoration</div><div class="xb-ptitle">Period family home</div><p class="xb-pdesc">Fresh whites around original stained glass, black gloss on the staircase spindles, and a deep green bedroom ceiling above crisp white walls.</p></div><div class="xb-pno">02</div></div>
+    <div class="xb-g" style="grid-template-columns:1.5fr 1fr 1fr;grid-template-rows:50mm 50mm">
+      <div class="xb-ph" style="grid-row:span 2;background-image:url(images/living-room.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/staircase-black.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/landing-period.jpg)"></div>
+      <div class="xb-ph" style="grid-column:span 2;background-image:url(images/bedroom-green-ceiling.jpg);background-position:center 35%"></div>
+    </div>
+    <div class="xb-phead" style="margin-top:9mm"><div><div class="xb-eyebrow" style="font-size:7pt">Project 03 · Bathrooms &amp; details</div><div class="xb-ptitle">Soft colour, sharp edges</div><p class="xb-pdesc">Blush walls, a smooth plastered archway, and clean, crisp lines where paint meets tile, terrazzo and brass.</p></div><div class="xb-pno">03</div></div>
+    <div class="xb-g" style="grid-template-columns:1fr 1.4fr 1fr;grid-template-rows:84mm">
+      <div class="xb-ph" style="background-image:url(images/arch-vanity.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/bathroom-terrazzo.jpg)"></div>
+      <div class="xb-ph" style="background-image:url(images/bathroom-pink.jpg);background-position:70% center"></div>
+    </div>
+  </div>
+  <div class="xb-foot"><span>Xtreme Commercial Services · 07962 679697</span><span>05</span></div>
+</section>
+
+<!-- 6 · REVIEWS (real Google reviews, lightly trimmed; surnames shortened) -->
+<section class="xb-page">
+  <div class="xb-pad">
+    <div class="xb-eyebrow">What our clients say</div>
+    <h2 style="margin-top:3mm">Clean finish. Clear pricing.<br><span class="tc">No stress.</span></h2>
+    <div class="xb-score"><div class="b">5.0 GOOGLE<span>★★★★★</span></div><p style="font-size:9.4pt;max-width:120mm">From 21 reviews on the Xtreme Commercial Services Google profile, from homeowners across London.</p></div>
+    <div style="display:grid;gap:4mm;margin-top:7mm">
+      <div class="xb-rv"><div class="top"><span class="job">Plastering &amp; painting</span><span class="st">★★★★★</span></div>
+        <q>We recently had some plastering and painting done by Grace and her team, and I honestly couldn't be happier with how it turned out. … The finish is clean and it's really changed the space. Straightforward communication, everything was cleaned up properly at the end, and they completed everything as we'd agreed beforehand.</q><div class="who">MAHLUN K. · GOOGLE REVIEW</div></div>
+      <div class="xb-rv"><div class="top"><span class="job">Plastering &amp; decorating</span><span class="st">★★★★★</span></div>
+        <q>Fantastic from start to finish. Grace is excellent at communication and clear pricing even when the parameters changed throughout the job. … The job was a very fiddly one, the finish is lovely. … The kind of trade in London that you are lucky to find.</q><div class="who">CLEO M. · GOOGLE REVIEW</div></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4mm">
+        <div class="xb-rv"><div class="top"><span class="job">Exterior painting</span><span class="st">★★★★★</span></div>
+          <q>Grace painted the front of my property. She is very professional, keeping me updated from the outset to the end. She liaised with the scaffolding company, one less thing for me to have to deal with. Competitive pricing.</q><div class="who">JUDITH C. · GOOGLE REVIEW</div></div>
+        <div class="xb-rv"><div class="top"><span class="job">Master bedroom</span><span class="st">★★★★★</span></div>
+          <q>Grace and team helped us redo our master bedroom: strip wallpaper, re-plaster the damaged walls, and paint. Our room actually looks modern now. … The pricing was very fair, and Grace was really patient and professional.</q><div class="who">MISCHIEF A. · GOOGLE REVIEW</div></div>
+      </div>
+    </div>
+    <div class="xb-g" style="grid-template-columns:repeat(3,1fr);grid-template-rows:38mm;margin-top:5mm">
+      <div class="xb-ph" style="background-image:url(images/cloakroom-terracotta.jpg);background-position:center 40%"></div>
+      <div class="xb-ph" style="background-image:url(images/staircase-black.jpg);background-position:center 60%"></div>
+      <div class="xb-ph" style="background-image:url(images/bedroom-green-ceiling.jpg);background-position:center 30%"></div>
+    </div>
+  </div>
+  <div class="xb-foot"><span>Read every review on Google: search “Xtreme Commercial Services”</span><span>06</span></div>
+</section>
+
+<!-- 7 · CTA -->
+<section class="xb-page">
+  <div class="xb-cta-top xb-ph" style="background-image:url(images/living-room-green-sofa.jpg);background-position:center 62%">
+    <div class="in">
+      <div class="xb-eyebrow">No cost · No pressure · About 90 seconds</div>
+      <h2>Book your free decoration quote.</h2>
+      <p>Tell us about your rooms, your building or your development. We'll give you a straight answer on what it needs, what it will cost and how long it will take.</p>
+    </div>
+  </div>
+  <div class="xb-cta-grid">
+    <div>
+      <div class="xb-eyebrow">What happens next</div>
+      <h3 class="xb-sm">After you get in touch.</h3>
+      <ul class="xb-list">
+        <li>We call you to talk through your project</li>
+        <li>If it's a fit, we visit to see the space</li>
+        <li>You get advice on colour, finish and prep</li>
+        <li>You get a written, itemised quote with dates</li>
+        <li>No pressure and no obligation to go ahead</li>
+      </ul>
+    </div>
+    <div>
+      <div class="xb-eyebrow">Is your project a fit?</div>
+      <h3 class="xb-sm">We're a good match if:</h3>
+      <ul class="xb-list">
+        <li>You need painting, decorating or plastering</li>
+        <li>The property is in Central, North or NW London</li>
+        <li>You're a homeowner, developer or building owner</li>
+        <li>It's one room, a whole home or a whole building</li>
+        <li>You want a lasting finish, not the cheapest price</li>
+      </ul>
+    </div>
+  </div>
+  <div class="xb-contact">
+    <div><div class="xb-eyebrow">Get in touch</div><div class="big2" style="margin-top:2mm">07962 679697</div><p style="margin-top:1.5mm;font-size:9pt">Call or text to talk about your project.</p></div>
+    <div>
+      <div class="row"><span>WEB</span>xtremecommercialservices.co.uk</div>
+      <div class="row"><span>AREAS</span>Central, North &amp; NW London</div>
+      <div class="row"><span>REVIEWS</span>5.0 ★ from 21 on Google</div>
+    </div>
+  </div>
+  <div class="xb-closer">
+    <div class="xb-wm"><div class="m">X</div><div><div class="n">XTREME</div><div class="s">COMMERCIAL SERVICES · LONDON</div></div></div>
+    <div style="color:#a59d91;font-size:7pt;text-align:right;line-height:1.7;letter-spacing:.06em">Painting · Decorating · Plastering<br>07962 679697</div>
+  </div>
+</section>
+</main>
+</body>
+</html>

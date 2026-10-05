@@ -154,7 +154,7 @@ Taken from each repo's code on 2026-09-24. "Live" means the latest repo for that
 | 9 | Kovacs, July rebuild (check if live) | Kovacreponew | A6 | B2 Fraunces + sans | C4 black + forest #33473B | D1 | E1 | F1 | G1 | H1 | I2 | J1 | K2 | L1 | Book Your Free Project Consultation | M1 | M5 | form at bottom | – |
 | 10 | Kovacs, first draft (check if live) | KovacRepo | A7 | B1 | C2 navy #2b3a4a | D2 | E1 | F7 | G4 | H5 | placeholders | J1 | K2 | L1 | Book Your Free Project Consultation | M1 | M5 | N1 | P3 |
 | 11 | Easy Plans DB (live) | easyplansdb /funnel/landing.html | A5 (navy inset frame, form in the hero) | B3 Barlow Condensed + Barlow | C2 navy #21397a | D3 | E4 | F3 | G3 | H3 | I2+I4 | J2 | K1 | L2 | Book Your Free Project Quote | M4 | M6 | N3 | e-brochure page |
-| 12 | Xtreme Commercial Services, decorating (live) | xtremerepo /funnel/landing.html | A4 (stone block bottom-left, no overlay; photo on top on mobile) | B4 Manrope | C3 stone #f4efe7 + terracotta #b24f2c | D4 | E3 | F3 | G3 | H2 | I4 | J3 | K3 | L3 | Book Your Free Decoration Quote | M2 | M7 | N2 | – |
+| 12 | Xtreme Commercial Services, decorating (live) | xtremerepo /funnel/landing.html | A4 (stone block bottom-left, no overlay; photo on top on mobile) | B4 Manrope | C3 stone #f4efe7 + terracotta #b24f2c | D4 | E3 | F3 | G3 | H2 | I4 | J3 | K3 | L3 | Book Your Free Decoration Quote | M2 | M7 | N2 | e-brochure page (/brochure) |
 
 Not logged: IQCrepo (IQC's own B2B funnel: text-only hero, serif + sans, cream + rust)
 and iqcwebsiterepo (Next.js marketing site). They are not client ad funnels.
