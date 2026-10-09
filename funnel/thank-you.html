@@ -8,12 +8,28 @@
   <meta name="theme-color" content="#f4efe7">
 
   <!-- TRACKING HEAD CODES GO HERE: Meta Pixel, GA4, GTM Head, TikTok, etc. -->
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1345841870794346');
+  fbq('track', 'PageView');
+  </script>
+  <!-- End Meta Pixel Code -->
   <!-- [GTM HEAD] -->
   <!-- [OTHER TRACKING] -->
 
   <!-- CONVERSION EVENT GOES HERE: Fire Meta Schedule event, Google Ads conversion, etc. -->
-  <!-- Meta, once the base Pixel is above:   <script>window.fbq && fbq('track', 'Schedule');</script>
-       Google Ads, once gtag is above:       <script>window.gtag && gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});</script> -->
+  <!-- Meta: form submitted (people only land here after the LeadConnector form redirects) -->
+  <script>window.fbq && fbq('track', 'Lead');</script>
+  <!-- Google Ads, once gtag is installed above:
+       <script>window.gtag && gtag('event', 'conversion', {'send_to': 'AW-XXXXXXXXX/XXXXXXXXXXXX'});</script> -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +39,10 @@
 <body>
   <!-- TRACKING BODY CODES GO HERE: GTM Body noscript, etc. -->
   <!-- [GTM BODY] -->
+  <!-- Meta Pixel (no-JS fallback) -->
+  <noscript><img height="1" width="1" style="display:none" alt=""
+  src="https://www.facebook.com/tr?id=1345841870794346&amp;ev=PageView&amp;noscript=1"
+  /></noscript>
 
   <div class="xcs-bar">
     <div class="xcs-wrap xcs-bar__inner">
