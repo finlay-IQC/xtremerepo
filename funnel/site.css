@@ -108,10 +108,11 @@ p:last-child { margin-bottom: 0; }
   font-size: 14px; font-weight: 600;
 }
 @media (min-width: 900px) {
-  .xcs-hero { position: relative; display: block; height: calc(92vh - 58px); min-height: 640px; }
+  /* the hero grows with its copy rather than letting the block overflow on shorter laptop screens */
+  .xcs-hero { position: relative; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; min-height: max(640px, calc(92vh - 58px)); }
   .xcs-hero__photo { position: absolute; inset: 0; height: auto; }
   .xcs-hero__block {
-    position: absolute; left: 0; bottom: 0;
+    position: relative; margin-top: 64px;
     /* keep the copy's left edge in line with the brand bar */
     --xcs-edge: max(0px, (100vw - var(--xcs-max)) / 2);
     width: calc(min(640px, 52%) + var(--xcs-edge));
@@ -133,11 +134,16 @@ p:last-child { margin-bottom: 0; }
 .xcs-stats { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
 .xcs-stats li { border-top: 4px solid var(--xcs-accent); padding-top: 12px; font-size: 13px; color: var(--xcs-muted); line-height: 1.4; }
 .xcs-stats strong { display: block; font-size: 26px; font-weight: 800; color: var(--xcs-text); letter-spacing: -0.03em; }
+.xcs-hero__bridge { margin: 0 0 24px; font-size: 15px; line-height: 1.6; color: var(--xcs-text); max-width: 560px; }
+.xcs-hero__sub + .xcs-hero__bridge { margin-top: -10px; }
+.xcs-form-note { margin: 0 0 12px; font-size: 15px; font-weight: 600; line-height: 1.5; color: var(--xcs-text); }
+.xcs-sayings__close { margin: 40px 0 0; font-weight: 800; }
 /* Mobile: compact hero and form first, so the form starts inside the first screen */
 @media (max-width: 899px) {
-  .xcs-hero--lead .xcs-hero__photo { height: 16vh; min-height: 120px; }
+  .xcs-hero--lead .xcs-hero__photo { height: 13vh; min-height: 100px; }
   .xcs-hero--lead .xcs-hero__block { padding: 18px var(--xcs-gutter) 16px; }
   .xcs-hero--lead .xcs-hero__sub { margin: 10px 0 0; font-size: 15px; line-height: 1.55; }
+  .xcs-hero--lead .xcs-hero__bridge { margin: 10px 0 0; font-size: 14px; line-height: 1.5; color: var(--xcs-muted); }
   /* the form sits directly below, so the hero button and friction line are desktop-only */
   .xcs-hero--lead .xcs-btn, .xcs-hero--lead .xcs-friction { display: none; }
   .xcs-hero--lead .xcs-trust { margin-top: 12px; padding-top: 10px; font-size: 13px; gap: 4px 16px; }
@@ -145,10 +151,11 @@ p:last-child { margin-bottom: 0; }
   #quote { padding-top: 20px; }
   .xcs-form-grid { display: flex; flex-direction: column; gap: 0; }
   .xcs-form-intro { display: contents; }
-  .xcs-form-intro .xcs-title { order: 1; font-size: 22px; }
-  .xcs-form-intro .xcs-title::before { display: none; }
-  .xcs-form-intro .xcs-lede { order: 2; margin: 4px 0 12px; font-size: 14px; }
-  .xcs-embed { order: 3; }
+  /* the hero bridge already says "tell us about your project", so the heading is kept for screen readers only */
+  .xcs-form-intro .xcs-title { order: 1; position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .xcs-form-intro .xcs-lede { order: 2; margin: 0 0 6px; font-size: 14px; font-weight: 800; color: var(--xcs-text); }
+  .xcs-formcol { order: 3; }
+  .xcs-form-note { font-size: 14px; font-weight: 400; color: var(--xcs-muted); margin-bottom: 10px; }
   .xcs-form-intro > p:not(.xcs-lede), .xcs-stats { order: 4; }
   .xcs-form-intro > p:not(.xcs-lede) { margin: 20px 0 0; }
 }
